@@ -24,6 +24,14 @@ User information is retrieved with GET http://localhost:8080/api/user/{username}
 
 ---------
 
+Docker containers and network is initialized with the script setup.sh
+
+Docker containers are spun up with run.sh
+
+The gateway service can now be accessed.
+
+---------
+
 This demonstration is based on a Micronaut microservices tutorial by Sergio del Amo Caballero from infoq.com:
 
 https://www.infoq.com/articles/micronaut-tutorial-microservices-jvm
