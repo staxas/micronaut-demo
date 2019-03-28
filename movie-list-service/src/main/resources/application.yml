@@ -1,0 +1,25 @@
+mongodb:
+  ip: "mongodb"
+  port: 27017
+  db: test
+  collection: users
+
+---
+micronaut:
+    application:
+        name: movie-list-service
+    server:
+        port: 8082
+        cors:
+          enabled: true
+
+---
+consul:
+  client:
+    registration:
+      enabled: true
+    defaultZone: "${CONSUL_HOST:consul}:${CONSUL_PORT:8500}"
+
+---
+
+
