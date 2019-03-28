@@ -4,8 +4,6 @@
 
 The goal of this microservice application is to be able to create user owned lists of movies. The persistance service saves a user with the list of movies consisting of an IMDB id and an "is owned" flag per movie. The output of this list is enriched with IMDB movie data from omdbapi.com.
 
-If you are not using the scripts provided to run the services as docker containers, you will need to change the application.yml files of all services to point to consul and mongodb servers. By default they are pointing to host names 'consul' and 'mongodb', instead you may want to change these to 'localhost'. No configuration is needed to connect the microservices, this is all managed by Consul.
-
 ---------
 
 Docker network and containers are initialized with the script setup.sh
@@ -14,8 +12,9 @@ Docker containers are spun up with run.sh
 
 The gateway service can now be accessed locally.
 
----------
+If you are not using the scripts provided to run the services as docker containers, you will need to change the application.yml files of all services to point to consul and mongodb servers. By default they are pointing to host names 'consul' and 'mongodb', instead you may want to change these to 'localhost'. No configuration is needed to connect the microservices, this is all managed by Consul.
 
+---------
 
 New users are created by POSTing to http://localhost:8080/api/user (gateway address) in the following format:
 
