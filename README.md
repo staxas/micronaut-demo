@@ -2,7 +2,9 @@
 
 The goal of this microservice application is to be able to create user owned lists of movies. The persistance service saves a user with the list of movies consisting of an IMDB id and an "is owned" flag per movie. The output of this list is enriched with IMDB movie data from omdbapi.com.
 
-These microservices require a Consul and MongoDB docker container to be running. Services look for MongoDB and Consul on their default ports and localhost by default, this can be changed in the application.yml files for each service. You would want to do this if you are running the microservices in containers as well. In this case you will want to give static ip addresses to your Consul and MongoDB containers, and configure your microservices application.yml files to the corresponding ip addresses. No configuration is needed to connect the microservices, this is all managed by Consul. 
+These microservices require a Consul and MongoDB docker container to be running. Services look for MongoDB and Consul on their default ports and localhost by default, this can be changed in the application.yml files for each service. You would want to do this if you are running the microservices in containers as well. In this case you will want to give static ip addresses to your Consul and MongoDB containers, and configure your microservices application.yml files to the corresponding ip addresses. No configuration is needed to connect the microservices, this is all managed by Consul.
+
+HOWEVER: if you are not using the scripts provided to run the services as docker containers, you will need to change the application.yml files of all services to point to consul and mongodb servers.
 
 
 New users are created by POSTing to http://localhost:8080/api/user (gateway address) in the following format:
