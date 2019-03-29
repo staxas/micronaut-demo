@@ -1,4 +1,4 @@
-<b>NOTICE:</b> If you are aiming to test this application extensively, please acquire your own personal OMDB key at http://www.omdbapi.com and add it in the application.yml file of the omdb-service application.
+<b>NOTICE:</b> To run this application, please acquire your own personal OMDB key at http://www.omdbapi.com and add it in the application.yml file of the omdb-service application.
 
 ---------
 
