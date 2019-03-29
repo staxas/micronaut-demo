@@ -20,8 +20,7 @@ New users are created by POSTing to http://localhost:8080/api/user (gateway addr
 
 ```
 { "userName" : "edwin", 
-	"movies" : [ 
-		{
+	"movies" : [ {
 			"imdbId" : "tt1285016",
 			"inCollection": "true"
 		}, {
