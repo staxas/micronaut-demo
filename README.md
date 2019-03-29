@@ -6,7 +6,7 @@ The goal of this microservice application is to be able to create user owned lis
 
 ---------
 
-Docker network and containers are initialized with the script setup.sh
+Docker network is created and containers are built with the script setup.sh
 
 Docker containers are spun up with run.sh
 
