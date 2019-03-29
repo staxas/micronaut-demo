@@ -2,7 +2,7 @@
 
 ---------
 
-The goal of this microservice application is to be able to create user owned lists of movies. The persistance service saves a user with the list of movies consisting of an IMDB id and an "is owned" flag per movie. The output of this list is enriched with IMDB movie data from omdbapi.com through the use of reactive programming.
+The goal of this microservice application is to be able to create user owned lists of movies. The persistance service saves a user with the list of movies consisting of an IMDB id and an "is owned" flag per movie. The output of this list is enriched with IMDB movie data from omdbapi.com through the use of reactive programming in the gateway service.
 
 ---------
 
