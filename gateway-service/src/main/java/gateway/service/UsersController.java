@@ -36,7 +36,6 @@ public class UsersController {
         return moviesFetcher.fetchMovies(keyword);
     }
 
-
     @Get("/user/{userName}")
     Flowable<OmdbMovie> getMovieList(String userName) {
         return usersFetcher.fetchMovieList(userName)
@@ -46,6 +45,4 @@ public class UsersController {
                         )
                 );
     }
-
-
 }
