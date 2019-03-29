@@ -12,7 +12,7 @@ Docker containers are spun up with run.sh
 
 The gateway service can now be accessed locally.
 
-If you are not using the scripts provided to run the services as docker containers, you will need to change the application.yml files of all services to point to consul and mongodb servers. By default they are pointing to host names 'consul' and 'mongodb', instead you may want to change these to 'localhost'. No configuration is needed to connect the microservices, this is all managed by Consul.
+If you are not using the scripts provided to run the services as docker containers, you will need to change the application.yml files of services to point to consul (all services) and mongodb (movie list service) servers. By default they are pointing to host names 'consul' and 'mongodb', instead you may want to change these to 'localhost'. No configuration is needed to connect the microservices, this is all managed by Consul.
 
 ---------
 
