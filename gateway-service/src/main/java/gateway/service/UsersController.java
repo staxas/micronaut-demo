@@ -41,7 +41,7 @@ public class UsersController {
         return usersFetcher.fetchMovieList(userName)
                 .flatMapMaybe(m -> moviesFetcher.fetchMovie(m.getImdbId())
                      .map(omdbMovie -> { omdbMovie.setInCollection(m.isInCollection());
-                          return omdbMovie;})
+                                         return omdbMovie;})
                 );
     }
 }
