@@ -40,8 +40,8 @@ public class UsersController {
     Flowable<OmdbMovie> getMovieList(String userName) {
         return usersFetcher.fetchMovieList(userName)
                 .flatMapMaybe(m -> moviesFetcher.fetchMovie(m.getImdbId())
-                .map(omdbMovie -> { omdbMovie.setInCollection(m.isInCollection());
-                        return omdbMovie;})
+                     .map(omdbMovie -> { omdbMovie.setInCollection(m.isInCollection());
+                          return omdbMovie;})
                 );
     }
 }
