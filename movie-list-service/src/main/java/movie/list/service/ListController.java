@@ -1,6 +1,5 @@
 package movie.list.service;
 
-import com.google.gson.*;
 import com.mongodb.BasicDBObject;
 import com.mongodb.client.FindIterable;
 import io.micronaut.http.HttpResponse;
@@ -13,8 +12,6 @@ import java.util.stream.Collectors;
 
 @Controller("/api")
 public class ListController {
-
-    Gson gson = new Gson();
 
     @Inject
     private DbConn dbConn;
