@@ -47,7 +47,7 @@ public class ListController {
     public HttpResponse getUserMovieList(String userName) {
         BasicDBObject findUser = new BasicDBObject();
         findUser.put("userName", userName);
-        FindIterable<Document> userList = dbConn.getCollection()                                    .find(findUser);
+        FindIterable<Document> userList = dbConn.getCollection().find(findUser);
         Document doc = userList.first();
 
         if(doc == null) {
